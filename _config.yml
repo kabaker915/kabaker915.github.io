@@ -1,0 +1,32 @@
+title: kabaker 的安全笔记
+description: 记录我在网络安全与 Python 上的学习过程，偏蓝队、日志分析与检测工程。
+author: kabaker915
+url: "https://kabaker915.github.io"
+baseurl: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# 这是用户名同名仓库（user site），所以 baseurl 留空。
+# 如果你以后改成普通仓库（比如 /blog），这里要填 "/blog"。
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: /:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - .gitignore

@@ -1,0 +1,276 @@
+:root {
+  --text: #2C2C2A;
+  --text-soft: #5F5E5A;
+  --text-hint: #888780;
+  --border: #E5E3DC;
+  --bg-soft: #F7F6F2;
+  --accent: #0F6E56;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #FFFFFF;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+               "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- 页头 ---------- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 22px 0;
+  margin-bottom: 48px;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav a {
+  font-size: 14px;
+  color: var(--text-soft);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.site-nav a:hover { color: var(--accent); }
+
+/* ---------- 首页 ---------- */
+.intro { margin-bottom: 44px; }
+
+.intro h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  letter-spacing: 0.5px;
+}
+
+.intro p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 15px;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list li:first-child { border-top: 1px solid var(--border); }
+
+.post-meta {
+  font-size: 13px;
+  color: var(--text-hint);
+  margin-bottom: 6px;
+}
+
+.post-link {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.post-link:hover { color: var(--accent); }
+
+.post-excerpt {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+
+/* ---------- 文章 ---------- */
+.post-header { margin-bottom: 40px; }
+
+.post-header h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+.post-tags { margin-left: 12px; }
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-soft);
+  background: var(--bg-soft);
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-right: 6px;
+}
+
+.post-content h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 48px 0 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.post-content h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 32px 0 12px;
+}
+
+.post-content p { margin: 0 0 18px; }
+
+.post-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 110, 86, 0.3);
+}
+
+.post-content a:hover { border-bottom-color: var(--accent); }
+
+.post-content ul,
+.post-content ol {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+
+.post-content li { margin-bottom: 8px; }
+
+.post-content blockquote {
+  margin: 0 0 18px;
+  padding: 4px 0 4px 18px;
+  border-left: 3px solid var(--border);
+  color: var(--text-soft);
+}
+
+.post-content blockquote p:last-child { margin-bottom: 0; }
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+/* ---------- 代码 ---------- */
+code {
+  font-family: "Cascadia Code", Consolas, "SF Mono", Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.post-content :not(pre) > code {
+  background: var(--bg-soft);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: #A32D2D;
+}
+
+.highlight,
+pre {
+  background: var(--bg-soft);
+  border-radius: 8px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  margin: 0 0 20px;
+  line-height: 1.65;
+  border: 1px solid var(--border);
+}
+
+pre code { background: none; color: var(--text); padding: 0; }
+
+/* 精简的语法高亮 */
+.highlight .c, .highlight .c1, .highlight .cm { color: #888780; font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kr { color: #A32D2D; }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb { color: #0F6E56; }
+.highlight .mi, .highlight .mf, .highlight .m { color: #185FA5; }
+.highlight .nf, .highlight .nb { color: #534AB7; }
+.highlight .nc { color: #993C1D; }
+
+/* ---------- 表格 ---------- */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 22px;
+  font-size: 14px;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.post-content th {
+  background: var(--bg-soft);
+  font-weight: 500;
+}
+
+/* ---------- 上下篇 ---------- */
+.post-nav {
+  margin-top: 60px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.post-nav a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.post-nav a:hover { color: var(--accent); }
+
+/* ---------- 页脚 ---------- */
+.site-footer {
+  margin-top: 80px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-hint);
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 600px) {
+  body { font-size: 15px; line-height: 1.8; }
+  .wrap { padding: 0 18px; }
+  .site-header { margin-bottom: 32px; }
+  .post-header h1 { font-size: 22px; }
+  .post-content h2 { font-size: 18px; }
+  .post-nav { flex-direction: column; gap: 10px; }
+}

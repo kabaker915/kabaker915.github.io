@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">文章</a>
+      <a href="{{ '/about.html' | relative_url }}">关于</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>{{ site.title }} · 持续学习中</p>
+  </div>
+</footer>
+
+</body>
+</html>
