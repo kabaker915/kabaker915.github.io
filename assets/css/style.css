@@ -265,6 +265,36 @@ pre code { background: none; color: var(--text); padding: 0; }
   color: var(--text-hint);
 }
 
+/* ---------- 学习历程时间线 ---------- */
+.post-lead {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-soft);
+}
+
+.timeline h2 {
+  border-top: 0;
+  border-left: 4px solid var(--accent);
+  padding: 2px 0 2px 16px;
+  margin: 52px 0 18px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.timeline h2:first-of-type { margin-top: 36px; }
+
+.timeline h2 + p { color: var(--text-soft); }
+
+.timeline blockquote {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--border);
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.timeline table { font-size: 13.5px; }
+
 /* ---------- 移动端 ---------- */
 @media (max-width: 600px) {
   body { font-size: 15px; line-height: 1.8; }
