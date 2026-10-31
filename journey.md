@@ -168,7 +168,7 @@ while q and (t - q[0]).seconds > WINDOW:
 | 能力 | 状态 | 证据 |
 | --- | --- | --- |
 | Python 文件读写与异常处理 | 已实现 | 日志解析层，编码降级 utf-8 / gbk / latin-1 |
-| 正则：命名分组、防回溯写法 | 已实现 | nginx combined 日志解析、21 条检测规则 |
+| 正则：命名分组、防回溯写法 | 已实现 | nginx combined 日志解析、27 条检测规则 |
 | 滑动窗口算法 | 已实现 | deque + `total_seconds()`，双层窗口 |
 | 加权打分替代布尔判断 | 已实现 | 强特征 10 分 / 弱特征 3 分 / 阈值 6 分 |
 | 多线程并发 | 已实现 | AI 研判层 `ThreadPoolExecutor` |
